@@ -10,8 +10,6 @@ app.get("/:picture/:w/:h", async (req, res) => {
 
   const { picture, w, h } = req.params;
 
-  console.log(picture);
-
   const imageBuffer = (
     await axios({
       url: decodeURIComponent(picture),
@@ -35,5 +33,5 @@ app.get("/:picture/:w/:h", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`App listening on port ${port}`);
 });
