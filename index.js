@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 app.get("/:picture/:w/:h", async (req, res) => {
-  //https://www.esfera.com.vc/file/v8699338928218651370/general/20221220_homepts_rsgt_smiles_desk.jpg
+  //encodeURIComponent(https://www.esfera.com.vc/file/v8699338928218651370/general/20221220_homepts_rsgt_smiles_desk.jpg)
 
   const { picture, w, h } = req.params;
 
